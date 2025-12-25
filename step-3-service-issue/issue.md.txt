@@ -1,0 +1,19 @@
+# Step 3 – Service Dependency Issue (Printer Not Working)
+
+## Issue
+User reported that the printer was not working and was showing a configuration error.
+
+## Diagnosis
+Attempting to print resulted in an error code (0x800706ba), indicating that the printer service was not responding. Further investigation showed that the Print Spooler service was stopped.
+
+## Root Cause
+The Print Spooler service, which is required for printer functionality, was not running.
+
+## Resolution
+Restarted the Print Spooler service using the Windows Services console.
+
+## Verification
+After restarting the service, the printer functioned normally and the configuration error was resolved.
+
+## Status
+Resolved

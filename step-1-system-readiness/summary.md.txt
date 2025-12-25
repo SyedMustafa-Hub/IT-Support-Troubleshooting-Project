@@ -1,0 +1,16 @@
+# Step 1 – System Readiness and Startup Impact Validation
+
+## Objective
+To verify that the system is stable and ready for troubleshooting activities, and to validate how startup applications affect system performance after boot.
+
+## Actions Performed
+- Verified system configuration and hardware details using `msinfo32`
+- Checked available disk space to ensure sufficient capacity for stable operation
+- Confirmed system protection was enabled to allow safe rollback during troubleshooting
+- Enabled additional non-critical startup applications to observe performance behavior
+
+## Observation
+After enabling extra startup applications and rebooting the system, CPU utilization showed temporary spikes during login. This confirmed that startup load can directly impact boot-time system performance.
+
+## Conclusion
+The system was verified to be healthy and prepared for troubleshooting tasks. Startup configuration was identified as a potential factor affecting performance, establishing a reliable baseline for subsequent troubleshooting steps.

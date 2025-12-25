@@ -1,0 +1,15 @@
+# Step 6 – Basic Security Check
+
+## Objective
+To perform a basic security and startup review after system troubleshooting to ensure stability and safety.
+
+## Actions Performed
+- Reviewed startup applications for unnecessary or potentially risky auto-start behavior
+- Disabled non-essential startup application to reduce security and performance risk
+- Performed a Windows Defender quick scan
+
+## Result
+Startup behavior was optimized and the security scan reported no threats, confirming the system was in a healthy and secure state.
+
+## Status
+Completed

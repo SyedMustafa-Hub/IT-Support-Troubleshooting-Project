@@ -1,0 +1,19 @@
+# Step 5 – Network Connectivity Issue (No Internet)
+
+## Issue
+User reported that the system was unable to access the internet.
+
+## Diagnosis
+Initial network diagnostics using `ipconfig` showed the network adapter in a disconnected state. Connectivity testing using `ping google.com` failed, confirming that the system had no internet access.
+
+## Root Cause
+The network adapter was disabled, preventing the system from establishing network connectivity.
+
+## Resolution
+The network adapter was re-enabled through the Network Connections settings, restoring network access.
+
+## Verification
+After enabling the adapter, connectivity was verified using `ping google.com`, which returned successful replies without packet loss.
+
+## Status
+Resolved

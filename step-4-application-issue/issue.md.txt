@@ -1,0 +1,19 @@
+# Step 4 – Application Installation Issue (Permission / UAC)
+
+## Issue
+User reported being unable to install an application on the system.
+
+## Diagnosis
+The installer required administrative privileges to make system-level changes. When run normally under a standard user context, installation could not proceed due to User Account Control (UAC) restrictions.
+
+## Root Cause
+Standard user permissions prevented the application from installing system-wide software without administrator approval.
+
+## Resolution
+The installer was executed using **Run as administrator**, and the UAC prompt was approved to grant the required privileges.
+
+## Verification
+The application installed successfully and launched without errors after installation.
+
+## Status
+Resolved
